@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Agdasima', sans-serif;
+}
+
+.centerAligner{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 15px solid black;
+}
+
+.centerAligner h1{
+    font-size: 40px;
+    color: color;
+    margin-bottom: 100px;
+}
+
+.centerAligner h1 span{
+    color: red;
+}
+
+.winnersDisplay{
+    height: 100vh;
+    width: 100vw;
+    background-color: wheat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.mainBox{
+    height: 400px;
+    width: 410px;
+    outline: none;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+.cell{
+    display: inline-block;
+    width: 133px;
+    height: 133px;
+    outline: none;
+    /* background-color: yellow; */
+}
+
+.mainBox div:nth-child(1),
+.mainBox div:nth-child(4),
+.mainBox div:nth-child(7)
+{
+    border-right: 2px solid black;
+}
+
+.mainBox div:nth-child(1),
+.mainBox div:nth-child(4)
+{
+    border-bottom: 2px solid black;
+}
+
+.mainBox div:nth-child(3),
+.mainBox div:nth-child(6),
+.mainBox div:nth-child(9)
+{
+    border-left: 2px solid black;
+}
+
+.mainBox div:nth-child(3),
+.mainBox div:nth-child(6)
+{
+    border-bottom: 2px solid black;
+}
+.mainBox div:nth-child(2),
+.mainBox div:nth-child(5)
+{
+    border-bottom: 2px solid black;
+}
+
+.circle{
+    background-image: url("images/circle.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 110px;
+}
+.cross{
+    background-image: url("images/cross2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 110px;
+}
+
+@media screen and (max-width:500px){
+    .mainBox{
+        height: 200px;
+        width: 210px;
+    }
+    .cell{
+        width: 66px;
+        height: 66px;
+    }
+    .circle{
+        background-size: 50px;
+    }
+    .cross{
+        background-size: 50px;
+    }
+}
